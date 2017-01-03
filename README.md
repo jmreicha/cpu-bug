@@ -50,3 +50,29 @@ file produces about 43k files after installation is finished.
 
 The base image uses yarn to install the packages to speed up install times.  You
 can install yarn on OSX with the `brew install yarn` command.
+
+##Diagnostics
+
+```
+Docker for Mac: version: 1.12.5 (3e6f00c1d)
+OS X: version 10.11.6 (build: 15G1004)
+logs: /tmp/6CF4E326-BEB6-4F67-A37C-573FA4CBEFAE/20170103-123447.tar.gz
+[OK]     vmnetd
+[OK]     dns
+[OK]     driver.amd64-linux
+[OK]     virtualization VT-X
+[OK]     app
+[OK]     moby
+[OK]     system
+[OK]     moby-syslog
+[OK]     db
+[OK]     env
+[OK]     virtualization kern.hv_support
+[OK]     slirp
+[OK]     osxfs
+[OK]     moby-console
+[OK]     logs
+[OK]     docker-cli
+[OK]     menubar
+[OK]     disk
+```

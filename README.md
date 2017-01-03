@@ -7,16 +7,18 @@ Docker for Mac.
 
 Clone this repo:
 
-- `git clone https://github.com/jmreicha/cpu-bug.git`
-- `cd cpu-bug`
+```
+git clone https://github.com/jmreicha/cpu-bug.git
+cd cpu-bug
+```
 
 Build the `test` service:
 
-- `docker-compose build`
+`docker-compose build`
 
 Start the container
 
-- `docker-compose up -d`
+`docker-compose up -d`
 
 This will attempt to start the container using the locally mounted files and
 should die right away since none of them are installed yet.  You can use
@@ -24,7 +26,7 @@ should die right away since none of them are installed yet.  You can use
 
 Install dependencies on the host system (OSX):
 
-- `yarn install` or `npm install`
+`yarn install` or `npm install`
 
 Watch the CPU spike:
 

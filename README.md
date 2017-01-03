@@ -35,6 +35,10 @@ the Docker for Mac app
 
 ##Notes
 
+You can drop into a bash shell in the container to poke around using this command:
+
+`docker-compose exec test bash`
+
 The `package.json` file contains random npm packages to replicate a repo with
 many dependencies, they are not used outside of demonstrating the issue.  It
 might take fewer dependencies to reproduce this, but the current package.json

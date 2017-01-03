@@ -5,18 +5,18 @@ Repo for reproducing (one of the) CPU spiking issues on Docker for Mac
 The following steps can be used to recreate the CPU spike issue when using
 Docker for Mac.
 
-Clone this repo:
+####Clone the repo:
 
 ```
 git clone https://github.com/jmreicha/cpu-bug.git
 cd cpu-bug
 ```
 
-Build the `test` service:
+####Build the `test` service:
 
 `docker-compose build`
 
-Start the container
+####Start the container:
 
 `docker-compose up -d`
 
@@ -24,11 +24,11 @@ This will attempt to start the container using the locally mounted files and
 should die right away since none of them are installed yet.  You can use
 `docker-compose logs` to check.
 
-Install dependencies on the host system (OSX):
+####Install dependencies on the host system (OSX):
 
 `yarn install` or `npm install`
 
-Watch the CPU spike:
+####Watch the CPU spike:
 
 ![cpu-spike](./cpu.png)
 

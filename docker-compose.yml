@@ -1,0 +1,8 @@
+version: '2'
+services:
+  test:
+    build: .
+    # Uncomment volumes to mount local directory into container
+    volumes:
+       - "./:/usr/src/app"
+

@@ -48,6 +48,9 @@ many dependencies, they are not used outside of demonstrating the issue.  It
 might take fewer dependencies to reproduce this, but the current package.json
 file produces about 43k files after installation is finished.
 
+- installing ~43k files spikes the CPU for about 5 minutes
+- running `rm -rf node_modules` spikes the CPU for about 45 seconds
+
 The base image uses yarn to install the packages to speed up install times.  You
 can install yarn on OSX with the `brew install yarn` command.
 

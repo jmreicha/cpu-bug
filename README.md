@@ -33,9 +33,17 @@ should die right away since none of them are installed yet.  You can use
 ![cpu-spike](./cpu.png)
 
 Eventually (5ish minutes) the system levels off, otherwise you need to restart
-the Docker for Mac app
+the Docker for Mac app.
+
+After the CPU mellows out, there are `mds_stores` and `mdworker` processes leftover (even when there are no containers running during the install).  If there are containers left over even in an exited state, the only way to clean up those processes is to remove the container.
+
+![mds_stores](./mds.png)
+
+I don't know if that is by design but just an obvservation as it adds a little bit of CPU overhead to the system for a little while.
 
 ##Notes
+
+The CPU spikes when you run `yarn install` or remove node_modules when there are no containers (live or dead) on the system.
 
 You can drop into a bash shell in the container to poke around using this command:
 

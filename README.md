@@ -16,14 +16,6 @@ cd cpu-bug
 
 `docker-compose build`
 
-####Start the container:
-
-`docker-compose up -d`
-
-This will attempt to start the container using the locally mounted files and
-should die right away since none of them are installed yet.  You can use
-`docker-compose logs` to check.
-
 ####Install dependencies on the host system (OSX):
 
 `yarn install` or `npm install`

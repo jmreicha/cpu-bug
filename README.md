@@ -35,7 +35,7 @@ should die right away since none of them are installed yet.  You can use
 Eventually (5ish minutes) the system levels off, otherwise you need to restart
 the Docker for Mac app.
 
-After the CPU mellows out, there are `mds_stores` and `mdworker` processes leftover (even when there are no containers running during the install).  If there are containers left over even in an exited state, the only way to clean up those processes is to remove the container.
+After the CPU mellows out, there are `mds_stores` and `mdworker` processes leftover (even when there are no containers running during the install).  If there are containers left over even in an exited state, the only way to clean up those processes is to remove the container or wait for the processes to disappear.
 
 ![mds_stores](./mds.png)
 
